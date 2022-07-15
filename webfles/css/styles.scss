@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+
+    p {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+    }
+}
+
+header {
+    background-color: #1B2430;
+    text-align: center;
+
+    nav {
+        max-width: 1200px;
+        align-items: center;
+        margin: auto;
+        display: flex;
+
+        img {
+            height: 55px;
+            width: 85px;
+            // margin: 0;
+            margin-right: 180px;
+            object-fit: contain;
+            margin-right: 2rem;
+            margin-right: 25rem;
+            margin-left: -15rem;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            margin: 0 30px;
+
+            a {
+                color: aliceblue;
+                text-decoration: none;
+                text-align: right;
+                display: block;
+                padding: 2rem 0;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+main {
+    max-width: 1200px;
+    padding-top: 15rem;
+    margin: 0 auto;
+
+    article {
+        justify-content: space-between;
+        margin: 1.2rem 1.2rem;
+        margin-bottom: 50px;
+        display: flex;
+
+
+        &:nth-of-type(2n) {
+            flex-direction: row-reverse;
+
+            img {
+                background-color: aqua;
+
+                .ref {
+                    flex-direction: row;
+                }
+            }
+        }
+
+        h2 {
+            font-size: xx-large;
+            padding-bottom: 2rem;
+        }
+
+        // }
+        .ref {
+            display: flex;
+            position: static;
+
+            .but {
+
+                background: #D6D5A8;
+                border: none;
+                border-radius: 10px;
+                height: 3rem;
+                width: 7rem;
+                font-size: x-large;
+
+            }
+
+            .ton {
+                background: #1B2430;
+                color: #ffffff;
+                border: none;
+                border-radius: 10px;
+                height: 3rem;
+                width: 7rem;
+                font-size: x-large;
+            }
+        }
+
+        .to {
+            background: #1B2430;
+            border-radius: 10px;
+            height: 3rem;
+            width: 7rem;
+            color: #ffffff;
+            font-size: x-large;
+        }
+
+        .buot {
+            background: linear-gradient(180deg, rgba(129, 103, 151, 0.5) 0%, rgba(81, 85, 126, 0.5) 100%),
+                linear-gradient(0deg, #816797, #816797);
+            border-radius: 10px;
+            height: 2rem;
+            height: 3rem;
+            width: 7rem;
+            color: #FFFFFF;
+            font-size: x-large;
+        }
+
+        p {
+            width: 550px;
+            padding-top: 2rem;
+        }
+    }
+
+    .barre {
+
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+
+        &:after, :before {
+            content: "";
+            flex: 1 1;
+            border-bottom: 5px solid #000;
+            margin: auto;
+        }
+
+        &:before {
+            content: "";
+            flex: 1 1;
+            border-bottom: 5px solid #000;
+            margin: auto;
+        }
+
+    }
+    // p .barre {
+    //     border-bottom: solid 15px lawngreen;
+    //     border-bottom: solid 15px lawngreen;
+    //     width: 25px;
+    // }
+}
+
+footer {
+    margin-top: 350px;
+    background-color: #1B2430;
+    width: 100%;
+
+    section {
+        display: flex;
+        justify-content: center;
+        
+        .gaz {
+            // &:after { a faire plus tard, n'arrive pas a crée dze sbarre verticale
+            //     content: "";
+               
+            //    left: 5px solid rgb(255, 255, 255);
+            //     margin: auto;
+            // }
+    
+            // &:before {
+            //     content: "";
+              
+            //     right: 5px solid rgb(255, 255, 255);
+            //     margin: auto;
+            // }
+            a {
+                width: 5px;
+                /*background-color: #0E1F56;*/
+                top: 0px;
+                bottom: 0px;
+                left: -30px;
+            }
+        }
+        article {
+            text-align: center;
+            padding: 2rem;
+
+            h3 {
+                color: #ffffff;
+            }
+
+            .dernier {
+                color: #FFFFFF;
+                margin-top: 2rem;
+            }
+
+            ul {
+                padding: 1.2rem 1.2rem;
+
+                li {
+                    list-style: none;
+                    padding: 1rem;
+                }
+
+                a {
+                    display: block;
+                    color: #9F9F9F;
+                    text-decoration: none;
+                    display: block;
+                    font-size: xx-large;
+                }
+
+                // margin-top: 80px;
+                // margin-bottom: 40px;
+               
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 693px) {
+    header {
+        max-width: 693px;
+
+        img {
+            float: left;
+            height: 397px;
+            object-fit: cover;
+        }
+    }
+
+    main {
+        max-width: 693px;
+        align-items: center;
+
+        img {
+            height: 193px;
+            width: 276px;
+        }
+
+        article {
+            display: inline-flex;
+        }
+
+        p {
+            width: 500px;
+            line-height: 30px;
+            size: 11px;
+        }
+    }
+
+    footer {
+        max-width: 693px;
+        height: 1560px;
+
+        section {
+            article {
+                h2 {
+                    color: #ffffff;
+                    font-size: xx-large;
+                }
+            }
+
+            justify-content: center;
+            flex-direction: column;
+
+            .partenaires {
+                color: #FFFFFF;
+                padding-top: 2.5rem;
+            }
+
+            .dernier {
+                // position:absolute;
+                // margin-top: 2rem;
+                // box-sizing: border-box;
+                // width: 395px;
+                // height: 127px;
+                // box-sizing: border-box;
+                display: block;
+                position: relative;
+                width: 395px;
+                height: 127px;
+                top: 500px;
+                left: calc(50% - 395px/2 + 7px);
+                background: #1B2430;
+                border: 1px solid #D2D2D2;
+                bottom: 25%;
+                margin-top: 25%;
+            }
+        }
+    }
+
+}
